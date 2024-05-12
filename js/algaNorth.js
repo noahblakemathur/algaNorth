@@ -20,16 +20,13 @@ window.onload = function () {
     // Function to change background and info every 5 seconds
     function changeBackgroundAndInfo() {
         // Array of background image URLs
-        const backgrounds = ["/fotoalgas2.png", "/fotofondo2.png", "/fotofondo4.png"]; // Remove url() here
+        const backgrounds = ["/img/fotoalgas2.png", "/img/fotofondo2.png", "/img/fotofondo4.png"]; 
 
-        // Change background image
         document.getElementById("introduction").style.backgroundImage = `url(${backgrounds[currentIndex]})`;
 
-        // Toggle span visibility
         toggleSpanVisibility();
     }
 
-    // Call the function initially
     changeBackgroundAndInfo();
 
     // Set interval to call the function every 5 seconds
