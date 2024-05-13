@@ -48,7 +48,7 @@ button:hover {transform: scale(1.1); transition: 0.3 ease;background-color: #7f1
      }
 }
 
-.intro {position: relative;height: 46.5em; width: 100em;background-image:url('img/fotoalgas2.png');
+.intro {position: relative;height: 46.5em; width: 100em;background-image:url('img/fotoalgas2.jpg');
 margin: 0 auto;top: 2em;background-position: center;background-repeat: no-repeat;background-size: cover;}
 
 .intro span {position: absolute; height: 12em; width: 30em; top: 8em;padding: 2em;background-color: #7f1d2b;

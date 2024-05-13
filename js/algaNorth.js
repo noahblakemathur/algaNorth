@@ -20,7 +20,7 @@ window.onload = function () {
     // Function to change background and info every 5 seconds
     function changeBackgroundAndInfo() {
         // Array of background image URLs
-        const backgrounds = ["/img/fotoalgas2.png", "/img/fotofondo2.png", "/img/fotofondo4.png"]; 
+        const backgrounds = ["/img/fotoalgas2.jpg", "/img/fotofondo2.png", "/img/fotofondo4.png"]; 
 
         document.getElementById("introduction").style.backgroundImage = `url(${backgrounds[currentIndex]})`;
 
