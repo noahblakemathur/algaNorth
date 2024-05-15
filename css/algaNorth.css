@@ -34,11 +34,14 @@ button:hover {transform: scale(1.1); transition: 0.3 ease;background-color: #7f1
 }
 
 @media (max-width:1150px){
-   header > nav{left: 43em; width: 50em;}
+   header > nav{left: 13.5em; width: 50em;font-size: 0.7em;max-width: 70%;top:4.5em}
    .info-usos p {font-size: larger;}
 
    header nav button {
       font-size: larger;
+   }
+   header .logo{
+      left:3em;
    }
 }
 
@@ -48,31 +51,31 @@ button:hover {transform: scale(1.1); transition: 0.3 ease;background-color: #7f1
      }
 }
 
-.intro {position: relative;height: 46.5em; width: 100em;background-image:url('img/fotoalgas2.jpg');
+.intro {position: relative;height: 46.5em; width: 100em;max-width: 90%;background-image:url('img/fotoalgas2.jpg');
 margin: 0 auto;top: 2em;background-position: center;background-repeat: no-repeat;background-size: cover;}
 
-.intro span {position: absolute; height: 12em; width: 30em; top: 8em;padding: 2em;background-color: #7f1d2b;
+.intro span {position: absolute; height: 12em; width: 30em;max-width: 90%; top: 8em;padding: 2em;background-color: #7f1d2b;
 color:white;background-color: rgba(127, 29, 43, 0.5);font-family: 'Lato',Helvetica,Arial,Lucida,sans-serif;
 font-weight: bold;font-size: 1.6em;}
 
 
-#header-nosotros {position: relative;width: 100em; height: 6em;margin: 0 auto;background-color: #7f1d2b; color: white;
+#header-nosotros {position: relative;width: 100em;max-width: 90%; height: 6em;margin: 0 auto;background-color: #7f1d2b; color: white;
 font-family:'Lato',Helvetica,Arial,Lucida,sans-serif;font-weight: bold}
 
-#header-nosotros h1 {position:absolute;top:1em;left: 20em;right: 20em;}
+#header-nosotros h1 {position:relative;top:1em;text-align: center;}
 
-.nosotros {position: relative;width: 100em;height: 30em;margin:0 auto;text-align: center;}
+.nosotros {position: relative;width: 100em;max-width: 90%;height: 30em;margin:0 auto;text-align: center;}
 .nosotros p,
-.nosotros img {display:inline-block;}
-.nosotros p {position: absolute;width: 20em;height: 20em;left: 2em;top: 2.5em;width: 30em;font-size: 1.7em;
-font-weight: bold;font-family:'Lato',Helvetica,Arial,Lucida,sans-serif;}
+.nosotros img {display:inline-block;max-width: 90%;}
+.nosotros p {position: absolute;width: 20em;max-width: 90%;height: 20em;left: 2em;top: 2.5em;width: 30em;font-size: 1.7em;
+font-weight: bold;font-family:'Lato',Helvetica,Arial,Lucida,sans-serif;overflow: hidden;}
 .nosotros img {position: absolute;right: 0em;top: 3.5em;border: #7f1d2b 2px ridge;}
 
-#header-aplicaciones {position: relative;width: 100em; height: 6em;margin: 0 auto;background-color: #7f1d2b; color: white;
+#header-aplicaciones {position: relative;width: 100em;max-width: 90%;height: 6em;margin: 0 auto;background-color: #7f1d2b; color: white;
    font-family:'Lato',Helvetica,Arial,Lucida,sans-serif;font-weight: bold;margin-top: 2em;}
-#header-aplicaciones h1 {position:absolute;top:1em;left: 20em;right: 20em;}
+#header-aplicaciones h1 {position:relative;top:1em;text-align: center;}
 
-.aplicaciones {position: relative;width: 100em;height: 37em;margin:0 auto;text-align: center;border: #7f1d2b solid 1px;
+.aplicaciones {position: relative;width: 100em;max-width: 90%;height: 37em;margin:0 auto;text-align: center;border: #7f1d2b solid 1px;
 background-image: url("/img/fotofondo.png");}
 .overlay {
    position: absolute;
@@ -91,17 +94,17 @@ color:white;}
 
 .aplicaciones .info-usos {position: relative;height: 20em;width: 22em;margin-right: 1em;bottom: 1em;display: inline-block;top:10em;
 padding: 1em;border-radius: 80px;font-size: 1.4em;background-color:transparent;
-overflow:hidden;word-wrap: break-word;align-items: center;}
+overflow:hidden;word-wrap: break-word;align-items: center;max-width: fit-content;}
 .info-usos p {color:white;font-weight: bold;font-family:'Lato',Helvetica,Arial,Lucida,sans-serif;}
 
-#header-mision {position: relative;width: 100em; height: 6em;margin: 0 auto;background-color: #7f1d2b; color: white;
+#header-mision {position: relative;width: 100em;max-width: 90%;height: 6em;margin: 0 auto;background-color: #7f1d2b; color: white;
    font-family:'Lato',Helvetica,Arial,Lucida,sans-serif;font-weight: bold}
    
-#header-mision h1 {position:absolute;top:1em;left: 20em;right: 20em;}
+#header-mision h1 {position:relative;top:1em;text-align: center;}
    
-.mision {position: relative;width: 100em;height: 30em;margin:0 auto;text-align: center;}
+.mision {position: relative;width: 100em;max-width: 90%;height: 30em;margin:0 auto;text-align: center;}
 .mision p,
 .mision img {display:inline-block;height: 24em;width: 20m;}
-.mision p {position: absolute;width: 20em;height: 20em;left: 2em;top: 2.5em;width: 30em;font-size: 1.7em;
+.mision p {position: absolute;width: 20em;max-width: 90%;height: 20em;left: 2em;top: 2.5em;width: 30em;font-size: 1.7em;
 font-weight: bold;font-family:'Lato',Helvetica,Arial,Lucida,sans-serif;}
 .mision img {position: absolute;right: 7em;top: 0em;}
