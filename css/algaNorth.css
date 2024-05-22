@@ -13,16 +13,24 @@ header nav button {border-radius: 5em; padding: 0.5em; cursor: pointer; margin-l
 header nav #contacto a {text-decoration: none;color: #7f1d2b;}
 header nav #nosotros a {text-decoration: none;color: #7f1d2b;}
 header nav #aplicaciones a {text-decoration: none;color: #7f1d2b;}
+header nav #mision a {text-decoration: none;color: #7f1d2b;}
 
 #contacto a:hover{color: white;}
 #nosotros a:hover{color: white;}
+.socials a:hover{color: white;}
 #aplicaciones a:hover{color: white;}
+#mision a:hover{color: white;}
+
 
 header nav .socials {border: #7f1d2b 1px solid;}
 header nav .socials i{font-size: larger;}
+header nav .socials a {text-decoration: none;color: #7f1d2b;}
 
 button:hover {transform: scale(1.1); transition: 0.3 ease;background-color: #7f1d2b;color: white !important;}
 #contacto a:hover{color: white;}
+
+@media (max-width: 1655px){
+}
 
 @media (max-width: 1430px){
    .socials {
@@ -47,7 +55,10 @@ button:hover {transform: scale(1.1); transition: 0.3 ease;background-color: #7f1
 
 @media (max-width:750px){
      header nav button {
-      font-size: larger;
+      display: none;
+     }
+     .logo{
+      right:2em;
      }
 }
 
@@ -87,8 +98,8 @@ background-image: url("/img/fotofondo.png");}
    /* You can also use a semi-transparent background image instead */
    /* background-image: url('your-overlay-image.png'); */
  }
-.aplicaciones .iconos {position: absolute; top:0;font-size:4.5em;width: 10em;height: 3em;left: 6em;
-color:white;}
+.aplicaciones .iconos {position: absolute; top:0;font-size:4.5em;width: 10em;left: 25%;
+color:white;max-width: 60%;}
 .aplicaciones .iconos i {position:relative;top:1em;}
 .aplicaciones .iconos i:not(#icono-derecha) {margin-right: 1em;}
 
