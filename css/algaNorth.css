@@ -1,34 +1,243 @@
-* {margin: 0;padding: 0;box-sizing: border-box;}
+* { margin: 0; }
 
-header { position: fixed;width: 100%;height: 8.5em;background-color: white;z-index: 1;}
+main {
+   font-family: Tahoma, Arial, Helvetica;
+   margin: 0 1em;
+}
+main > div,
+main > #header,
+main > section > div > img {
+    position: relative;
+    width: 100%;
+}
 
-header .logo {position: absolute; height: 7em; width: 5em;left: 10em;}
+#header,
+#logo,
+#header > nav {
+    height: 120px;
+}
+#header > nav {
+    position: absolute;
+    right: 0;
+    top: 3em;
+}
+#header > nav > a {
+   background-color: #fff;
+   border: #7f1d2b 1px solid;
+   border-radius: 5em; 
+   color: #7f1d2b;
+   cursor: pointer; 
+   font-size: 1.1em;
+   font-weight: bold;
+   padding: 0.1em 0.4em;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+#header > nav > a,
+#header > nav > span {
+    margin: 0 0 0 0.2em;
+}
+#header > nav > a:hover {
+    background-color: #7f1d2b;
+    color: #fff;
+}
 
-.logo img {position:absolute;height: 7em;width: 5em;top: 0.5em;}
+#intro {
+    margin: 2em 0;
+    min-height: 6em;
+    padding: 4em 0;
+}
+#intro > p {
+    background-color: rgba(255, 0, 0, 0.5);
+    color: #fff;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 1em 2em;
+    text-align: justify;
+    text-justify: inter-word;
+    text-transform: uppercase;
+    width: 60%;
+}
 
-header > nav { position: absolute; right: 10em; top: 3em; min-width: 10em;}
-header nav button {border-radius: 5em; padding: 0.5em; cursor: pointer; margin-left: 1em;font-size: larger;
-;background-color: white;font-weight: bold;color: #7f1d2b;border:0;}
+div.bar {
+    background-color: #7f1d2b;
+    color: #fff;
+    padding: 0;
+    text-transform: uppercase;
+}
 
-header nav #contacto a {text-decoration: none;color: #7f1d2b;}
-header nav #nosotros a {text-decoration: none;color: #7f1d2b;}
-header nav #aplicaciones a {text-decoration: none;color: #7f1d2b;}
-header nav #mision a {text-decoration: none;color: #7f1d2b;}
+div.body {
+    padding: 0.5em 0;
+    text-align: justify;
+    text-justify: inter-word;
+}
 
-#contacto a:hover{color: white;}
-#nosotros a:hover{color: white;}
-.socials a:hover{color: white;}
-#aplicaciones a:hover{color: white;}
-#mision a:hover{color: white;}
+div.body > p , div.body > img {
+    margin: 0.5em 0 0.5em 0;
+}
+/*.intro {
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-image:url('img/fotoalgas2.jpg');
+   height: 46.5em; 
+   max-width: 90%;
+   margin: 0 auto;
+   width: 100em;
+}
+
+.intro span { 
+   height: 12em; 
+   width: 30em;
+   max-width: 90%; 
+   padding: 2em;
+   background-color: #7f1d2b;
+   color:white;
+   background-color: rgba(127, 29, 43, 0.5);
+   font-family: 'Lato',Helvetica,Arial,Lucida,sans-serif;
+   font-weight: bold;font-size: 1.6em;
+}
 
 
-header nav .socials {border: #7f1d2b 1px solid;}
-header nav .socials i{font-size: larger;}
-header nav .socials a {text-decoration: none;color: #7f1d2b;}
+#header-nosotros {
+   background-color: #7f1d2b;
+   color: white;
+   font-family:'Lato',Helvetica,Arial,Lucida,sans-serif;
+   font-weight: bold;
+   height: 6em;
+   margin: 0 auto;
+   max-width: 90%; 
+   width: 100em;
+}
 
-button:hover {transform: scale(1.1); transition: 0.3 ease;background-color: #7f1d2b;color: white !important;}
-#contacto a:hover{color: white;}
+#header-nosotros h1 {
+   top:1em;
+   text-align: center;
+}
 
+.nosotros {
+   width: 100em;
+   max-width: 90%;
+   height: 30em;
+   margin: 0 auto;
+   text-align: center;
+}
+.nosotros p,
+.nosotros img {
+   display: inline-block;
+   max-width: 90%;}
+.nosotros p {
+   font-size: 1.7em;
+   font-weight: bold;
+   font-family:'Lato',Helvetica,Arial,Lucida,sans-serif;
+   height: 20em;
+   max-width: 90%;
+   overflow: hidden;
+   width: 20em;
+   width: 30em;
+}
+
+.nosotros img {border: #7f1d2b 2px ridge;}
+
+#header-aplicaciones {
+   background-color: #7f1d2b;
+   color: white;
+   font-family:'Lato',Helvetica,Arial,Lucida,sans-serif;
+   font-weight: bold;
+   height: 6em;margin: 0 auto;
+   margin-top: 2em;
+   max-width: 90%;
+   width: 100em;
+}
+
+#header-aplicaciones h1 {text-align: center;}
+
+.aplicaciones {
+   border: #7f1d2b solid 1px;
+   background-image: url("/img/fotofondo.png");
+   height: 37em;
+   max-width: 90%;
+   margin:0 auto;
+   text-align: center;
+   width: 100em;
+}
+
+.overlay {
+   background-color: rgba(0, 0, 0, 0.5);
+   height: 100%;
+   width: 100%;
+ }
+
+.aplicaciones .iconos {
+   color:white;
+   font-size:4.5em;
+   max-width: 60%;
+   width: 10em;
+}
+.aplicaciones .iconos i {}
+.aplicaciones .iconos i:not(#icono-derecha) {margin-right: 1em;}
+
+.aplicaciones .info-usos {
+   align-items: center;
+   background-color:transparent;
+   border-radius: 80px;
+   display: inline-block;
+   font-size: 1.4em;
+   height: 20em;
+   max-width: fit-content;
+   margin-right: 1em;
+   overflow:hidden;
+   padding: 1em;
+   width: 22em;
+   word-wrap: break-word;
+}
+
+.info-usos p {
+   color:white;
+   font-weight: bold;
+   font-family:'Lato',Helvetica,Arial,Lucida,sans-serif;
+}
+
+#header-mision {
+   background-color: #7f1d2b; 
+   color: white;
+   font-family:'Lato',Helvetica,Arial,Lucida,sans-serif;
+   font-weight: bold;
+   height: 6em;
+   max-width: 90%;
+   margin: 0 auto;
+   width: 100em;
+}
+   
+#header-mision h1 {text-align: center;}
+   
+.mision {
+   height: 30em;
+   max-width: 90%;
+   margin:0 auto;
+   text-align: center;
+   width: 100em;
+}
+
+.mision p,
+.mision img {
+   display:inline-block;
+   height: 24em;
+   width: 20m;
+}
+
+.mision p {
+   font-size: 1.7em;
+   font-weight: bold;
+   font-family:'Lato',Helvetica,Arial,Lucida,sans-serif;
+   height: 20em;
+   max-width: 90%;
+   width: 30em;
+}*/
+
+
+
+/*
 @media (max-width: 1655px){
 }
 
@@ -42,80 +251,24 @@ button:hover {transform: scale(1.1); transition: 0.3 ease;background-color: #7f1
 }
 
 @media (max-width:1150px){
-   header > nav{left: 13.5em; width: 50em;font-size: 0.7em;max-width: 70%;top:4.5em}
+   header > nav {
+      font-size: 0.7em;
+      left: 13.5em;
+      max-width: 70%;
+      width: 50em;
+      top:4.5em;
+   }
+
    .info-usos p {font-size: larger;}
 
-   header nav button {
-      font-size: larger;
-   }
-   header .logo{
-      left:3em;
-   }
+   header nav button {font-size: larger;}
+
+   header .logo{left:3em;}
 }
 
 @media (max-width:750px){
-     header nav button {
-      display: none;
-     }
-     .logo{
-      right:2em;
-     }
+   header nav button {display: none;}
+   .logo{ right: 2em;}
 }
+*/
 
-.intro {position: relative;height: 46.5em; width: 100em;max-width: 90%;background-image:url('img/fotoalgas2.jpg');
-margin: 0 auto;top: 2em;background-position: center;background-repeat: no-repeat;background-size: cover;}
-
-.intro span {position: absolute; height: 12em; width: 30em;max-width: 90%; top: 8em;padding: 2em;background-color: #7f1d2b;
-color:white;background-color: rgba(127, 29, 43, 0.5);font-family: 'Lato',Helvetica,Arial,Lucida,sans-serif;
-font-weight: bold;font-size: 1.6em;}
-
-
-#header-nosotros {position: relative;width: 100em;max-width: 90%; height: 6em;margin: 0 auto;background-color: #7f1d2b; color: white;
-font-family:'Lato',Helvetica,Arial,Lucida,sans-serif;font-weight: bold}
-
-#header-nosotros h1 {position:relative;top:1em;text-align: center;}
-
-.nosotros {position: relative;width: 100em;max-width: 90%;height: 30em;margin:0 auto;text-align: center;}
-.nosotros p,
-.nosotros img {display:inline-block;max-width: 90%;}
-.nosotros p {position: absolute;width: 20em;max-width: 90%;height: 20em;left: 2em;top: 2.5em;width: 30em;font-size: 1.7em;
-font-weight: bold;font-family:'Lato',Helvetica,Arial,Lucida,sans-serif;overflow: hidden;}
-.nosotros img {position: absolute;right: 0em;top: 3.5em;border: #7f1d2b 2px ridge;}
-
-#header-aplicaciones {position: relative;width: 100em;max-width: 90%;height: 6em;margin: 0 auto;background-color: #7f1d2b; color: white;
-   font-family:'Lato',Helvetica,Arial,Lucida,sans-serif;font-weight: bold;margin-top: 2em;}
-#header-aplicaciones h1 {position:relative;top:1em;text-align: center;}
-
-.aplicaciones {position: relative;width: 100em;max-width: 90%;height: 37em;margin:0 auto;text-align: center;border: #7f1d2b solid 1px;
-background-image: url("/img/fotofondo.png");}
-.overlay {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
-   /* You can also use a semi-transparent background image instead */
-   /* background-image: url('your-overlay-image.png'); */
- }
-.aplicaciones .iconos {position: absolute; top:0;font-size:4.5em;width: 10em;left: 25%;
-color:white;max-width: 60%;}
-.aplicaciones .iconos i {position:relative;top:1em;}
-.aplicaciones .iconos i:not(#icono-derecha) {margin-right: 1em;}
-
-.aplicaciones .info-usos {position: relative;height: 20em;width: 22em;margin-right: 1em;bottom: 1em;display: inline-block;top:10em;
-padding: 1em;border-radius: 80px;font-size: 1.4em;background-color:transparent;
-overflow:hidden;word-wrap: break-word;align-items: center;max-width: fit-content;}
-.info-usos p {color:white;font-weight: bold;font-family:'Lato',Helvetica,Arial,Lucida,sans-serif;}
-
-#header-mision {position: relative;width: 100em;max-width: 90%;height: 6em;margin: 0 auto;background-color: #7f1d2b; color: white;
-   font-family:'Lato',Helvetica,Arial,Lucida,sans-serif;font-weight: bold}
-   
-#header-mision h1 {position:relative;top:1em;text-align: center;}
-   
-.mision {position: relative;width: 100em;max-width: 90%;height: 30em;margin:0 auto;text-align: center;}
-.mision p,
-.mision img {display:inline-block;height: 24em;width: 20m;}
-.mision p {position: absolute;width: 20em;max-width: 90%;height: 20em;left: 2em;top: 2.5em;width: 30em;font-size: 1.7em;
-font-weight: bold;font-family:'Lato',Helvetica,Arial,Lucida,sans-serif;}
-.mision img {position: absolute;right: 7em;top: 0em;}

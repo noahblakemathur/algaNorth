@@ -1,39 +1,31 @@
-window.onload = function () {
+var AlgaNorth = function(opts){
 
-    const spans = ["content", "content2", "content3"]; // Fix typo here
+    const that = this;
+    const intro_texts = opts.intro_texts;
+    const backgrounds = opts.background_images; // Array of background image URLs
+    const intro_div = document.getElementById('intro');
 
-    // Index to keep track of which span is currently visible
-    let currentIndex = 0;
-
-    // Function to toggle visibility of spans
-    function toggleSpanVisibility() {
-        // Hide the current span
-        document.getElementById(spans[currentIndex]).style.display = "none";
-
-        // Increment index or loop back to 0 if at the end
-        currentIndex = (currentIndex + 1) % spans.length;
-
-        // Show the next span
-        document.getElementById(spans[currentIndex]).style.display = "block";
+    let textIndex = 0;
+    this.toggleIntroText = () => {
+        console.log('wzp')
+        intro_div.querySelector('p').innerHTML = intro_texts[textIndex];
+        textIndex = (textIndex + 1) % intro_texts.length;
     }
 
-    // Function to change background and info every 5 seconds
-    function changeBackgroundAndInfo() {
-        // Array of background image URLs
-        const backgrounds = ["/img/fotoalgas2.jpg", "/img/fotofondo2.png", "/img/fotofondo4.png"]; 
-
-        document.getElementById("introduction").style.backgroundImage = `url(${backgrounds[currentIndex]})`;
-
-        toggleSpanVisibility();
+    let imgIndex = 0;
+    this.toggleIntroBackgroundImage = () => {
+        intro_div.style.backgroundImage = `url(${backgrounds[imgIndex]})`;
+        imgIndex = (imgIndex + 1) % backgrounds.length;
     }
 
-    changeBackgroundAndInfo();
+    // public
+    this.changeBackgroundAndInfo = () => {
+        that.toggleIntroBackgroundImage();
+        that.toggleIntroText();
+    }
 
-    // Set interval to call the function every 5 seconds
-    setInterval(changeBackgroundAndInfo, 5000);
-
-    document.getElementById("logo").addEventListener("click", function() {
-        window.location.href = "../index.html"; // Replace "index.html" with the path to your main page
-    });
-
-};
+    this.run = () => {
+        that.changeBackgroundAndInfo();
+        setInterval(that.changeBackgroundAndInfo, 5000);
+    }
+}
