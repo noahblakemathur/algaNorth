@@ -29,4 +29,3 @@ var AlgaNorth = function(opts){
         setInterval(that.changeBackgroundAndInfo, 5000);
     }
 }
-
