@@ -82,13 +82,14 @@ div.bar h1 {
    background-position: center;
    background-repeat: no-repeat;
    background-blend-mode: darken;
+   padding: 0.5em 0;
 }
 
 #uses-info p {
    color: #fff;
-   text-align: center;
-   padding: 1em;
+   padding: 0.5em 1em;
 }
+
 
 div.body {
     padding-top: 0.5em;
@@ -98,14 +99,13 @@ div.body {
 div.body > p { margin: 0.5em 0; }
 div.body > img { margin: 0.5em 0; }
 
-div.body >.icons {
+div.body > .icons {
    color: #fff;
    font-size: 1.6em;
    margin: 0.3em 0;
-   position: relative;
    text-align: center;
 }
-div.body >.icons i { margin-right: 1em; }
+div.body > .icons i { margin-right: 1em; }
 
 footer {
    bottom: 0;
