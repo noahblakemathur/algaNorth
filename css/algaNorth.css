@@ -4,6 +4,8 @@ main {
    font-family: Tahoma, Arial, Helvetica;
    margin: 0 3em 4em 3em ;
 }
+main > section { margin-bottom: 2em; }
+
 main > div,
 main > #header,
 main > section > div > img {
@@ -11,22 +13,17 @@ main > section > div > img {
     width: 100%;
 }
 
-#header {margin-bottom: 1em;}
 #header,
 #logo,
 #header > nav {
     height: 120px;
+    text-align: center;
 }
 #header > nav {
     position: absolute;
     right: 0;
     top: 3em;
     display: none;
-}
-#header img {
-   position: relative;
-   left: 40%;
-   top: 0;
 }
 #header > nav > a {
    background-color: #fff;
@@ -50,20 +47,16 @@ main > section > div > img {
 }
 
 #intro {
-    margin: 2em 0;
-    min-height: 6em;
-    padding: 4em 0;
-    margin: 0 auto;
-    top: 2em;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 12em;
+    padding-top: 2em;
 }
 #intro > p {
     background-color: rgba(127, 29, 43, 0.7);
     color: #fff;
     font-weight: bold;
-    margin: 0;
     padding: 1em 2em;
     text-align: justify;
     text-justify: inter-word;
@@ -123,28 +116,29 @@ div.body > p , div.body > img {
 }
 
 .contact-bar {
-   position: fixed;
+   background-color: #7f1d2b;
+   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+   color: white;
    bottom: 0;
    left: 0;
-   width: 100%;
-   background-color:#7f1d2b;
-   color: white;
-   text-align: center;
-   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-   z-index: 1000;
    padding: 1em;
+   position: fixed;
+   text-align: center;
+   width: 100%;
+   z-index: 1000;
 }
 
 .contact-bar div {
-   width: 25em;
-   text-align: center;
    display: inline-block;
+   text-align: center;
+   width: 25em;
 }
 
 .contact-bar div span {
    left: 0;
    position: relative;
 }
+
 /*.intro {
    background-position: center;
    background-repeat: no-repeat;
