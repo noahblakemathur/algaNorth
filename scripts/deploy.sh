@@ -8,6 +8,14 @@ APPHOME='~/code/alganorth'
 echo "# Begin AlgaNorth deployment"
 echo
 
+echo "# Start on develop"
+echo "> git co develop"
+git checkout develop
+
+echo "# Push ${APPNAME}.develop to github"
+echo "> git push origin develop"
+git push origin develop
+
 echo "# Merge ${APPNAME}.local develop to main"
 echo "> git co main"
 git checkout main
