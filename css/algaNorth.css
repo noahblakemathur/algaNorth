@@ -129,4 +129,9 @@ footer div > nav { padding: 0.7em 0.5em 0 0.5em; }
 footer a { text-decoration: none; }
 footer a:hover { text-decoration: underline; }
 footer a, a:visited, footer a:active { color: #fff; }
+@media only screen and (orientation : portrait) {
+    footer {
+        font-size: 0.8em;
+    }
+}
 
