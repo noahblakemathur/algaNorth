@@ -97,7 +97,7 @@ div.body {
     text-justify: inter-word;
 }
 div.body > p { margin: 0.5em 0; }
-div.body > img { margin: 0.25em 0;max-height: 40em;max-width: 40em;
+div.body > img { margin: 0.25em 0; width: 100%;
 margin-right: 0.5em;margin-left: 0.25em;text-align: center;}
 
 div.body > .icons {
