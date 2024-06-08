@@ -97,7 +97,8 @@ div.body {
     text-justify: inter-word;
 }
 div.body > p { margin: 0.5em 0; }
-div.body > img { margin: 0.5em 0; }
+div.body > img { margin: 0.25em 0;max-height: 40em;max-width: 40em;
+margin-right: 0.5em;margin-left: 0.25em;text-align: center;}
 
 div.body > .icons {
    color: #fff;
@@ -130,3 +131,10 @@ footer a { text-decoration: none; }
 footer a:hover { text-decoration: underline; }
 footer a, a:visited, footer a:active { color: #fff; }
 
+.panoramic {
+    background-image: url("/img/fototractor.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
